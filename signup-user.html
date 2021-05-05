@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--browser-sync start --server --directory --files "**/*"-->
+	<meta charset="utf-8">
+
+	<!-- tells some ie to use latest rendering versions -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="viewport" content="width=device-width, initial=scaile=1">
+	
+	<title>Sign Up User</title>
+	
+
+	<link rel="stylesheet" href="css/bootstrap.min.css"></link>
+	<!-- <link rel="stylesheet"  href="css/style.css"> -->
+	
+	<!-- google fonts- oxygen -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet">
+	<style type="text/css">
+		*{
+			font-family: 'Oxygen', sans-serif;
+			font-size: 16px;
+		}
+		html{
+
+			background-color: #Ececec;
+		}
+		body{
+			box-sizing: border-box;
+			background-color: #Ececec;
+		}
+		#side{
+			height: inherit;
+			background-color: #056594;
+			padding-left: 0;
+			border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px; 
+			padding-top: 10vh;
+			padding-left: 10vw;	
+			color: white;
+		}
+		#signup-form{
+			width: 80vw;
+			margin: auto;
+			height: 1250px;
+			margin-top: 15vh;
+			margin-bottom: 15vh;
+			border-radius: 10px;
+			border-color: darkslategray;
+			box-shadow: 0 10px 10px 5px darkslategrey;
+		}
+		#main-content{
+			padding-top: 8vh;
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 10px; 
+			position: relative;
+			background-color: lightslategray;
+			height: inherit;
+			/*padding-left: 8%;	*/
+		}
+		.lbl{
+			float: left;
+			clear: both;
+			width: 60%;
+			margin-top: 5px;
+			margin-bottom: 10px;
+			color: black;
+		}
+		input{
+			border-radius: 10px;
+			border : 1px solid #ccc;
+			margin-bottom: 10px;
+			padding: 10px 5px;
+			width: 100%;
+		}
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button {
+		  -webkit-appearance: none;
+		  margin: 0;
+		}
+		button{
+			margin: 10px 12px;
+			height: 40px;
+			border-radius: 10px;
+			border : 1px solid #ccc;
+		}
+		#main-content a{
+			color: white;
+			text-decoration: none;
+		}
+		#main-content a:hover{
+			color: #056594;
+		}
+		hr{
+			width: 100%;
+		}
+		@media(max-width: 767px){
+			#main-content{
+			
+			border-radius:10px;
+				
+			}
+		}	
+		
+	</style>
+</head>
+<body>
+	<form id="signup-form" class="row">
+		<div id="side" class="col-md-6 visible-md visible-lg">
+			<h1>InstaRide</h1>
+			<span>Sign Up - User</span>
+		</div>
+		<div class="col-md-6" id="main-content">
+			<label class="lbl">Name :</label><br>
+				<input placeholder="First name..." oninput="this.className = ''" name="fname"><br>
+				<input placeholder="Last name..." oninput="this.className = ''" name="lname"><br>
+			<label class="lbl">Contact Info:</label>
+				<p><input placeholder="E-mail..." oninput="this.className = ''" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></p>
+				<p><input placeholder="Phone..." oninput="this.className = ''" name="phone" type="number" maxlength="10" size="10"></p>
+			</label>
+
+			<label class="lbl">Current Address :</label>
+				<p><input placeholder="Full Address" oninput="this.className = ''" name="address"></p>
+			
+			<label class="lbl">Date of Birth:</label>
+				<p><input placeholder="dd" oninput="this.className = ''" name="dd" pattern="[0-9]{2}" title="eg: 11"></p>
+				<p><input placeholder="mm" oninput="this.className = ''" name="mm" pattern="[0-9]{2}" title="eg: 11"></p>
+				<p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy" pattern="[0-9]{4}" title="eg: 2020"></p>
+
+			<label class="lbl">Login Info:</label>
+				<p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
+				<p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password" pattern=".{8,}" title="Eight or more characters"></p>
+
+			<label class="lbl">Authentication Details :</label>
+				<p><input placeholder="Adhaar Number..." oninput="this.className = ''" name="adhaar-num" type="number" pattern="[0-9]{12}"  maxlength="12" size="12" title="eg: 123412341234"></p>
+				<p><input placeholder="licence Number..." oninput="this.className = ''" name="lic-num" type="text" pattern="[A-Z]{2}[0-9]{14}" maxlength="16" size="16" title="eg: AP12345123451234"></p>
+			<label class="lbl">Upload Licence:</label>
+				<p><input type="file" id="myFile" name="filename"></p>
+
+
+			<div >
+				<button class="col-md-5" type="submit"><span class="glyphicon glyphicon-log-in"></span> SignUp</button>
+				<button class="col-md-5"  type="reset"><span class="glyphicon glyphicon-repeat"></span> Clear</button>
+			</div>
+			<hr >
+			<label class="lbl">
+				<span>Already have an account ?</span>
+				<a href="index.html">Login</a>
+			</label>
+		</div>
+	</form>
+
+<!-- jQuery (Bootstrap JS plugins depend on it) -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
