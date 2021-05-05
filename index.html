@@ -76,8 +76,21 @@
 		a:hover{
 			color: green;
 		}
-		@media(max-width: 767px){
+		@media(max-width: 992px) and (min-width: 400px){
 			#main-content{ border-radius:10px;}
+			#login-form{
+				height: 550px;
+			}
+			#side{
+
+				background-color: #056594;
+				padding: 10px 10px;
+				margin-bottom: 20px;
+				margin-right: 30px;
+				border-radius: 10px; 
+				color: white;
+				height: auto;
+			}
 		}
 	</style>
 </head>
@@ -88,6 +101,10 @@
 			<span>Welcome. Please choose an option to continue</span>
 		</div>
 		<div class="col-md-6" id="main-content">
+			<div class="visible-sm visible-xs" id="side">
+				<p>Insta Ride</p>
+				<p>Select an option to continue</p>
+			</div>
 			<a href="login-user.html" class="col-md-3">User</a>
 			<a href="login-provider.html" class="col-md-3">Provider</a>	
 		</div>
