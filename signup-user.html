@@ -96,11 +96,22 @@
 		hr{
 			width: 100%;
 		}
-		@media(max-width: 767px){
-			#main-content{
-			
-			border-radius:10px;
-				
+		#brand-sm{
+			color: white;
+		    background-color: #056594;
+		    border-radius: 10px;
+		    margin-bottom: 15px;
+		    padding: 15px;
+		    text-align: center;
+		    margin-right: 20px;
+    		margin-left: 20px;
+		}
+		@media(max-width: 992px) and (min-width: 400px){
+			#main-content{		
+			border-radius:10px;	
+			}
+			#signup-form{
+				height: 1400px;	
 			}
 		}	
 		
@@ -113,6 +124,10 @@
 			<span>Sign Up - User</span>
 		</div>
 		<div class="col-md-6" id="main-content">
+			<div class="col-md-6 visible-sm visible-xs" id="brand-sm">
+				<h1>InstaRide</h1>
+				<span>SignUp - User</span>
+			</div>
 			<label class="lbl">Name :</label><br>
 				<input placeholder="First name..." oninput="this.className = ''" name="fname"><br>
 				<input placeholder="Last name..." oninput="this.className = ''" name="lname"><br>
