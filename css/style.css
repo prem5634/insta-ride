@@ -23,7 +23,7 @@ body{
 	height: 150px;
 	margin: 10px 15px 10px 0px;
 }
-#kosher-logo{
+#user-logo, #provider-logo{
 	width: 30px;
 	height: 30px;
 	margin: 2px;
@@ -136,7 +136,7 @@ body{
 	.container .jumbotron{
 		/*background: url("../images/DominosRestaurant_1200.jpg") no-repeat;
 		height: 675px;*/
-		min-height: 675px;
+		/*min-height: 675px;*/
 	}
 }
 /*medium device only*/
@@ -144,10 +144,17 @@ body{
 	.container .jumbotron{
 		/*background: url("../images/DominosRestaurant_992.jpg") no-repeat;
 		height: 560px;*/
-		min-height: 560px;
+		/*min-height: 560px;*/
 	}
 	.menu-item-description{
 		font-size: 0.9em !important;
+	}
+	.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle), 
+	.btn-group>.btn:last-child:not(:first-child), 
+	.btn-group>.dropdown-toggle:not(:first-child){
+		border-radius: 4px !important;
+		margin-bottom: 5px;
+		margin-left: 15%;
 	}
 }
 /*small devices only*/
@@ -155,7 +162,7 @@ body{
 	.container .jumbotron{
 		/*background: url("../images/DominosRestaurant_992.jpg") no-repeat;
 		height: 560px;*/
-		min-height: 560px;
+		/*min-height: 560px;*/
 	}
 	#logo-image{
 		background :url('../images/logo-img-sm.png') no-repeat;
@@ -174,6 +181,13 @@ body{
 
 	#collapsable-nav a{
 		font-size: 1.2em;
+	}
+	.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle), 
+	.btn-group>.btn:last-child:not(:first-child), 
+	.btn-group>.dropdown-toggle:not(:first-child){
+		border-radius: 4px !important;
+		margin-bottom: 5px;
+		margin-left: 10%;
 	}	
 }
 
@@ -182,7 +196,9 @@ body{
 	.container .jumbotron{
 		/*background: url("../images/DominosRestaurant_992.jpg") no-repeat;
 		height: 560px;*/
-		min-height: 560px;
+		/*min-height: 560px;*/
+		padding: 0;
+		margin :0 0 15px 0;
 	}
 	/*header*/
 	.navbar-brand{
@@ -210,13 +226,6 @@ body{
 		text-align: vertical;
 		margin-right: 10px;
 	}
-	.container .jumbotron {
-		/*background: url('../images/DominosRestaurant_767.jpg') no-repeat;
-		height: 510px;*/
-		
-		padding: 0px;
-		margin :0 0 15px 0; 
-	}
 
 	.panel-footer section{
 		margin-bottom: 30px;
@@ -224,6 +233,13 @@ body{
 	}
 	.panel-footer section hr{
 		width: 50%;
+	}
+	.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle), 
+	.btn-group>.btn:last-child:not(:first-child), 
+	.btn-group>.dropdown-toggle:not(:first-child){
+		border-radius: 4px !important;
+		margin-bottom: 5px;
+		margin-left: 5%;
 	}
 
 }

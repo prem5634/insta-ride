@@ -10,7 +10,7 @@
 
     <meta name="viewport" content="width=device-width, initial=scaile=1">
     
-    <title>RideHistory - User</title>
+    <title>Upcoming Rides - User</title>
     
 
     <link rel="stylesheet" href="css/bootstrap.min.css"></link>
@@ -76,7 +76,7 @@
                     </a>
                     <p>
                         <img src="" alt="User Pic" id= "user-logo">
-                        <span>Ride History - User</span>
+                        <span>Upcoming Rides - User</span>
                     </p>
                 </div>
 
@@ -91,7 +91,7 @@
 
             <div id="collapsable-nav" class="collapse navbar-collapse">
                 <!-- for items to float on right side=navbar-right -->
-                <ul id="nav-list" class="nav navbar-nav navbar-right">
+               <ul id="nav-list" class="nav navbar-nav navbar-right">
                     <li>
                         <!--br for next line-->
                         <a href="profile-user.html">
@@ -121,7 +121,8 @@
                 <th>Vehicle</th>
                 <th>Start Location</th>
                 <th>End Location</th>
-                <th>Amount</th>
+                <th>Est. Amount</th>
+                <th>Status</th> <!-- Pending , Accepted -->
             </tr>
              <!-- PHP CODE TO FETCH DATA FROM ROWS
             <?php   // LOOP TILL END OF DATA 
@@ -137,161 +138,184 @@
                 <td>Vehicle1</td>
                 <td>start1</td>
                 <td>end1</td>
-                <td>amount1</td>            
+                <td>amount1</td>
+                <td>Pending</td>            
             </tr>
             <tr>
                 <td>Provider2</td>
                 <td>Vehicle2</td>
                 <td>start2</td>
                 <td>end2</td>
-                <td>amount2</td>            
+                <td>amount2</td>
+                <td>Accepted</td>            
             </tr>
             <tr>
                 <td>Provider3</td>
                 <td>Vehicle3</td>
                 <td>start3</td>
                 <td>end3</td>
-                <td>amount3</td>            
+                <td>amount3</td>
+                <td>Pending</td>            
             </tr>
             <tr>
                 <td>Provider2</td>
                 <td>Vehicle2</td>
                 <td>start2</td>
                 <td>end2</td>
-                <td>amount2</td>            
+                <td>amount2</td>
+                <td>Accepted</td>            
             </tr>
             <tr>
                 <td>Provider3</td>
                 <td>Vehicle3</td>
                 <td>start3</td>
                 <td>end3</td>
-                <td>amount3</td>            
+                <td>amount3</td>
+                <td>Pending</td>            
             </tr>
             <tr>
                 <td>Provider2</td>
                 <td>Vehicle2</td>
                 <td>start2</td>
                 <td>end2</td>
-                <td>amount2</td>            
+                <td>amount2</td>
+                <td>Accepted</td>            
             </tr>
             <tr>
                 <td>Provider3</td>
                 <td>Vehicle3</td>
                 <td>start3</td>
                 <td>end3</td>
-                <td>amount3</td>            
+                <td>amount3</td>
+                <td>Pending</td>            
             </tr>
             <tr>
                 <td>Provider2</td>
                 <td>Vehicle2</td>
                 <td>start2</td>
                 <td>end2</td>
-                <td>amount2</td>            
+                <td>amount2</td>
+                <td>Accepted</td>            
             </tr>
             <tr>
                 <td>Provider3</td>
                 <td>Vehicle3</td>
                 <td>start3</td>
                 <td>end3</td>
-                <td>amount3</td>            
+                <td>amount3</td>
+                <td>Pending</td>            
             </tr>
             <tr>
                 <td>Provider2</td>
                 <td>Vehicle2</td>
                 <td>start2</td>
                 <td>end2</td>
-                <td>amount2</td>            
+                <td>amount2</td>
+                <td>Accepted</td>            
             </tr>
             <tr>
                 <td>Provider3</td>
                 <td>Vehicle3</td>
                 <td>start3</td>
                 <td>end3</td>
-                <td>amount3</td>            
+                <td>amount3</td>
+                <td>Pending</td>            
             </tr>
             <tr>
                 <td>Provider2</td>
                 <td>Vehicle2</td>
                 <td>start2</td>
                 <td>end2</td>
-                <td>amount2</td>            
+                <td>amount2</td>
+                <td>Accepted</td>            
             </tr>
             <tr>
                 <td>Provider3</td>
                 <td>Vehicle3</td>
                 <td>start3</td>
                 <td>end3</td>
-                <td>amount3</td>            
+                <td>amount3</td>
+                <td>Pending</td>            
             </tr>
             <tr>
                 <td>Provider2</td>
                 <td>Vehicle2</td>
                 <td>start2</td>
                 <td>end2</td>
-                <td>amount2</td>            
+                <td>amount2</td>
+                <td>Accepted</td>            
             </tr>
             <tr>
                 <td>Provider3</td>
                 <td>Vehicle3</td>
                 <td>start3</td>
                 <td>end3</td>
-                <td>amount3</td>            
+                <td>amount3</td>
+                <td>Pending</td>            
             </tr>
             <tr>
                 <td>Provider2</td>
                 <td>Vehicle2</td>
                 <td>start2</td>
                 <td>end2</td>
-                <td>amount2</td>            
+                <td>amount2</td>
+                <td>Accepted</td>            
             </tr>
             <tr>
                 <td>Provider3</td>
                 <td>Vehicle3</td>
                 <td>start3</td>
                 <td>end3</td>
-                <td>amount3</td>            
+                <td>amount3</td>
+                <td>Pending</td>            
             </tr>
             <tr>
                 <td>Provider2</td>
                 <td>Vehicle2</td>
                 <td>start2</td>
                 <td>end2</td>
-                <td>amount2</td>            
+                <td>amount2</td>
+                <td>Accepted</td>            
             </tr>
             <tr>
                 <td>Provider3</td>
                 <td>Vehicle3</td>
                 <td>start3</td>
                 <td>end3</td>
-                <td>amount3</td>            
+                <td>amount3</td>
+                <td>Pending</td>            
             </tr>
             <tr>
                 <td>Provider2</td>
                 <td>Vehicle2</td>
                 <td>start2</td>
                 <td>end2</td>
-                <td>amount2</td>            
+                <td>amount2</td>
+                <td>Accepted</td>            
             </tr>
             <tr>
                 <td>Provider3</td>
                 <td>Vehicle3</td>
                 <td>start3</td>
                 <td>end3</td>
-                <td>amount3</td>            
+                <td>amount3</td>
+                <td>Pending</td>            
             </tr>
             <tr>
                 <td>Provider2</td>
                 <td>Vehicle2</td>
                 <td>start2</td>
                 <td>end2</td>
-                <td>amount2</td>            
+                <td>amount2</td>
+                <td>Accepted</td>            
             </tr>
             <tr>
                 <td>Provider3</td>
                 <td>Vehicle3</td>
                 <td>start3</td>
                 <td>end3</td>
-                <td>amount3</td>            
+                <td>amount3</td>
+                <td>Pending</td>            
             </tr>
             <!-- <?php
                 }

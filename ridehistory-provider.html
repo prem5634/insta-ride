@@ -10,7 +10,7 @@
 
     <meta name="viewport" content="width=device-width, initial=scaile=1">
     
-    <title>RideHistory - User</title>
+    <title>RideHistory - Provider</title>
     
 
     <link rel="stylesheet" href="css/bootstrap.min.css"></link>
@@ -75,8 +75,8 @@
                         <h1>Insta Ride</h1>
                     </a>
                     <p>
-                        <img src="" alt="User Pic" id= "user-logo">
-                        <span>Ride History - User</span>
+                        <img src="" alt="Provider Pic" id= "provider-logo">
+                        <span>Ride History- Provider</span>
                     </p>
                 </div>
 
@@ -94,15 +94,19 @@
                 <ul id="nav-list" class="nav navbar-nav navbar-right">
                     <li>
                         <!--br for next line-->
-                        <a href="profile-user.html">
+                        <a href="profile-provider.html">
                             <span class="glyphicon glyphicon-user"></span><br class="hidden-xs">Profile</a>
                     </li>
                     <li>
-                        <a href="ridehistory-user.html">
+                        <a href="ridehistory-provider.html">
                             <span class="glyphicon glyphicon-align-justify"></span><br class="hidden-xs">Ride History</a>
                     </li>
                     <li>
-                        <a href="upcomingrides-user.html">
+                        <a href="vehiclelist-provider.html">
+                            <span class="glyphicon glyphicon-list-alt"></span><br class="hidden-xs">Vehicle List</a>
+                    </li>
+                    <li>
+                        <a href="upcomingrides-provider.html">
                             <span class="glyphicon glyphicon-bell"></span><br class="hidden-xs">Upcoming Rides</a>
                     </li>
                 </ul>
@@ -117,10 +121,11 @@
     <div class="jumbotron">
         <table >
             <tr>
-                <th>Provider Id</th>
+                <th>Rider Id</th>
                 <th>Vehicle</th>
                 <th>Start Location</th>
                 <th>End Location</th>
+                <th>Distance</th>
                 <th>Amount</th>
             </tr>
              <!-- PHP CODE TO FETCH DATA FROM ROWS
@@ -133,164 +138,187 @@
                     ROW OF EVERY COLUMN -->
                 <!-- <td><?php echo $rows['username'];?></td>
                 <td><?php echo $rows['problems'];?></td> -->
-                <td>Provider1</td>
+                <td>Rider1</td>
                 <td>Vehicle1</td>
                 <td>start1</td>
                 <td>end1</td>
+                <td>distance1</td>
                 <td>amount1</td>            
             </tr>
             <tr>
-                <td>Provider2</td>
+                <td>Rider2</td>
                 <td>Vehicle2</td>
                 <td>start2</td>
                 <td>end2</td>
+                <td>distance2</td>
                 <td>amount2</td>            
             </tr>
             <tr>
-                <td>Provider3</td>
+                <td>Rider3</td>
                 <td>Vehicle3</td>
                 <td>start3</td>
                 <td>end3</td>
+                <td>distance3</td>
                 <td>amount3</td>            
             </tr>
             <tr>
-                <td>Provider2</td>
+                <td>Rider2</td>
                 <td>Vehicle2</td>
                 <td>start2</td>
                 <td>end2</td>
+                <td>distance2</td>
                 <td>amount2</td>            
             </tr>
             <tr>
-                <td>Provider3</td>
+                <td>Rider3</td>
                 <td>Vehicle3</td>
                 <td>start3</td>
                 <td>end3</td>
+                <td>distance3</td>
                 <td>amount3</td>            
             </tr>
             <tr>
-                <td>Provider2</td>
+                <td>Rider2</td>
                 <td>Vehicle2</td>
                 <td>start2</td>
                 <td>end2</td>
+                <td>distance2</td>
                 <td>amount2</td>            
             </tr>
             <tr>
-                <td>Provider3</td>
+                <td>Rider3</td>
                 <td>Vehicle3</td>
                 <td>start3</td>
                 <td>end3</td>
+                <td>distance3</td>
                 <td>amount3</td>            
             </tr>
             <tr>
-                <td>Provider2</td>
+                <td>Rider2</td>
                 <td>Vehicle2</td>
                 <td>start2</td>
                 <td>end2</td>
+                <td>distance2</td>
                 <td>amount2</td>            
             </tr>
             <tr>
-                <td>Provider3</td>
+                <td>Rider3</td>
                 <td>Vehicle3</td>
                 <td>start3</td>
                 <td>end3</td>
+                <td>distance3</td>
                 <td>amount3</td>            
             </tr>
             <tr>
-                <td>Provider2</td>
+                <td>Rider2</td>
                 <td>Vehicle2</td>
                 <td>start2</td>
                 <td>end2</td>
+                <td>distance2</td>
                 <td>amount2</td>            
             </tr>
             <tr>
-                <td>Provider3</td>
+                <td>Rider3</td>
                 <td>Vehicle3</td>
                 <td>start3</td>
                 <td>end3</td>
+                <td>distance3</td>
                 <td>amount3</td>            
             </tr>
             <tr>
-                <td>Provider2</td>
+                <td>Rider2</td>
                 <td>Vehicle2</td>
                 <td>start2</td>
                 <td>end2</td>
+                <td>distance2</td>
                 <td>amount2</td>            
             </tr>
             <tr>
-                <td>Provider3</td>
+                <td>Rider3</td>
                 <td>Vehicle3</td>
                 <td>start3</td>
                 <td>end3</td>
+                <td>distance3</td>
                 <td>amount3</td>            
             </tr>
             <tr>
-                <td>Provider2</td>
+                <td>Rider2</td>
                 <td>Vehicle2</td>
                 <td>start2</td>
                 <td>end2</td>
+                <td>distance2</td>
                 <td>amount2</td>            
             </tr>
             <tr>
-                <td>Provider3</td>
+                <td>Rider3</td>
                 <td>Vehicle3</td>
                 <td>start3</td>
                 <td>end3</td>
+                <td>distance3</td>
                 <td>amount3</td>            
             </tr>
             <tr>
-                <td>Provider2</td>
+                <td>Rider2</td>
                 <td>Vehicle2</td>
                 <td>start2</td>
                 <td>end2</td>
+                <td>distance2</td>
                 <td>amount2</td>            
             </tr>
             <tr>
-                <td>Provider3</td>
+                <td>Rider3</td>
                 <td>Vehicle3</td>
                 <td>start3</td>
                 <td>end3</td>
+                <td>distance3</td>
                 <td>amount3</td>            
             </tr>
             <tr>
-                <td>Provider2</td>
+                <td>Rider2</td>
                 <td>Vehicle2</td>
                 <td>start2</td>
                 <td>end2</td>
+                <td>distance2</td>
                 <td>amount2</td>            
             </tr>
             <tr>
-                <td>Provider3</td>
+                <td>Rider3</td>
                 <td>Vehicle3</td>
                 <td>start3</td>
                 <td>end3</td>
+                <td>distance3</td>
                 <td>amount3</td>            
             </tr>
             <tr>
-                <td>Provider2</td>
+                <td>Rider2</td>
                 <td>Vehicle2</td>
                 <td>start2</td>
                 <td>end2</td>
+                <td>distance2</td>
                 <td>amount2</td>            
             </tr>
             <tr>
-                <td>Provider3</td>
+                <td>Rider3</td>
                 <td>Vehicle3</td>
                 <td>start3</td>
                 <td>end3</td>
+                <td>distance3</td>
                 <td>amount3</td>            
             </tr>
             <tr>
-                <td>Provider2</td>
+                <td>Rider2</td>
                 <td>Vehicle2</td>
                 <td>start2</td>
                 <td>end2</td>
+                <td>distance2</td>
                 <td>amount2</td>            
             </tr>
             <tr>
-                <td>Provider3</td>
+                <td>Rider3</td>
                 <td>Vehicle3</td>
                 <td>start3</td>
                 <td>end3</td>
+                <td>distance3</td>
                 <td>amount3</td>            
             </tr>
             <!-- <?php

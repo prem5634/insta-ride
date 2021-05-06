@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--browser sync in the (parent cd eg:week3) 
+        browser-sync start --server --directory --files "**/*"-->
+    <meta charset="utf-8">
+
+    <!-- tells some ie to use latest rendering versions -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial=scaile=1">
+    
+    <title>Upcoming Rides - Provider</title>
+    
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"></link>
+    <link rel="stylesheet"  href="css/style.css">
+    
+    <!-- google fonts- oxygen -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <!-- google fonts- lora// for brand -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+   
+    <style type="text/css">
+        table {
+            margin: 0 auto;
+            font-size: large;
+            border: 1px solid black;
+            border-radius: 5px;
+            overflow: scroll;
+        }
+  
+        h1 {
+            text-align: center;
+            color: #006600;
+            font-size: xx-large;
+        }
+  
+        td,th {
+            background-color: white;
+            border: 1px solid black;
+            width: 12%;
+            text-align: center;
+        }
+  
+        th{
+            font-size: 1.2em;
+            color: #056594;
+        }
+  
+        td {
+            font-weight: lighter;
+            padding: 5px;
+            color: black;
+
+        }
+        #status-col{
+            width: 15%;
+        }
+        .jumbotron{
+            height: auto;
+        }
+        .btn{
+            background-color: #ddd;
+            color: black;
+            text-align: center;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .btna:hover {
+          background-color: #3e8e41;
+          color: white;
+        }
+        .btnr:hover {
+          background-color: red;
+          color: white;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+            <div  class="navbar-header">
+                <a href="index.html" class="pull-left visible-sm visible-md visible-lg">
+                    <div id="logo-image" alt="Logo Image"></div>
+                </a>
+
+                <div class="navbar-brand">
+                    <a href="index.html">
+                        <h1>Insta Ride</h1>
+                    </a>
+                    <p>
+                        <img src="" alt="Provider Pic" id= "provider-logo">
+                        <span>Upcoming Rides - Provider</span>
+                    </p>
+                </div>
+
+                
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>   
+            </div>
+
+            <div id="collapsable-nav" class="collapse navbar-collapse">
+                <!-- for items to float on right side=navbar-right -->
+                <ul id="nav-list" class="nav navbar-nav navbar-right">
+                    <li>
+                        <!--br for next line-->
+                        <a href="profile-provider.html">
+                            <span class="glyphicon glyphicon-user"></span><br class="hidden-xs">Profile</a>
+                    </li>
+                    <li>
+                        <a href="ridehistory-provider.html">
+                            <span class="glyphicon glyphicon-align-justify"></span><br class="hidden-xs">Ride History</a>
+                    </li>
+                    <li>
+                        <a href="vehiclelist-provider.html">
+                            <span class="glyphicon glyphicon-list-alt"></span><br class="hidden-xs">Vehicle List</a>
+                    </li>
+                    <li>
+                        <a href="upcomingrides-provider.html">
+                            <span class="glyphicon glyphicon-bell"></span><br class="hidden-xs">Upcoming Rides</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    
+
+<div class="container" id="main-content">
+    <div class="jumbotron">
+        <table >
+            <tr>
+                <th>Rider Id</th>
+                <th>Vehicle</th>
+                <th>Start Location</th>
+                <th>End Location</th>
+                <th>Distance</th>
+                <th>Amount1</th>
+                <th>Status</th>
+
+            </tr>
+             <!-- PHP CODE TO FETCH DATA FROM ROWS
+            <?php   // LOOP TILL END OF DATA 
+                while($rows=$result->fetch_assoc())
+                {
+             ?> -->
+            <tr>
+               <!-- FETCHING DATA FROM EACH 
+                    ROW OF EVERY COLUMN -->
+                <!-- <td><?php echo $rows['username'];?></td>
+                <td><?php echo $rows['problems'];?></td> -->
+                <td>Rider1</td>
+                <td>Vehicle1</td>
+                <td>start1</td>
+                <td>end1</td>
+                <td>distance1</td>
+                <td>amount1</td>
+                <td id="status-col">
+                    <div class="btn-group" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default btna">Accept</button>
+                      <button type="button" class="btn btn-default btnr">Reject</button>
+                    </div>
+                </td>            
+            </tr>
+            <tr>
+                <td>Rider2</td>
+                <td>Vehicle2</td>
+                <td>start2</td>
+                <td>end2</td>
+                <td>distance2</td>
+                <td>amount2</td>
+                <td id="status-col">
+                    <div class="btn-group" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default btna">Accept</button>
+                      <button type="button" class="btn btn-default btnr">Reject</button>
+                    </div>
+                </td>            
+            </tr>
+            <tr>
+                <td>Rider3</td>
+                <td>Vehicle3</td>
+                <td>start3</td>
+                <td>end3</td>
+                <td>distance3</td>
+                <td>amount3</td>
+                <td id="status-col">
+                    <div class="btn-group" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default btna">Accept</button>
+                      <button type="button" class="btn btn-default btnr">Reject</button>
+                    </div>
+                </td>            
+            </tr>
+            <tr>
+                <td>Rider2</td>
+                <td>Vehicle2</td>
+                <td>start2</td>
+                <td>end2</td>
+                <td>distance2</td>
+                <td>amount2</td>
+                <td id="status-col">
+                    <div class="btn-group" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default btna">Accept</button>
+                      <button type="button" class="btn btn-default btnr">Reject</button>
+                    </div>
+                </td>            
+            </tr>
+            <tr>
+                <td>Rider3</td>
+                <td>Vehicle3</td>
+                <td>start3</td>
+                <td>end3</td>
+                <td>distance3</td>
+                <td>amount3</td>
+                <td id="status-col">
+                    <div class="btn-group" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default btna">Accept</button>
+                      <button type="button" class="btn btn-default btnr">Reject</button>
+                    </div>
+                </td>            
+            </tr>
+            <tr>
+                <td>Rider2</td>
+                <td>Vehicle2</td>
+                <td>start2</td>
+                <td>end2</td>
+                <td>distance2</td>
+                <td>amount2</td>
+                <td id="status-col">
+                    <div class="btn-group" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default btna">Accept</button>
+                      <button type="button" class="btn btn-default btnr">Reject</button>
+                    </div>
+                </td>            
+            </tr>
+            <tr>
+                <td>Rider3</td>
+                <td>Vehicle3</td>
+                <td>start3</td>
+                <td>end3</td>
+                <td>distance3</td>
+                <td>amount3</td>
+                <td id="status-col">
+                    <div class="btn-group" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default btna">Accept</button>
+                      <button type="button" class="btn btn-default btnr">Reject</button>
+                    </div>
+                </td>            
+            </tr>
+            <tr>
+                <td>Rider2</td>
+                <td>Vehicle2</td>
+                <td>start2</td>
+                <td>end2</td>
+                <td>distance2</td>
+                <td>amount2</td>
+                <td id="status-col">
+                    <div class="btn-group" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default btna">Accept</button>
+                      <button type="button" class="btn btn-default btnr">Reject</button>
+                    </div>
+                </td>            
+            </tr>
+            <tr>
+                <td>Rider3</td>
+                <td>Vehicle3</td>
+                <td>start3</td>
+                <td>end3</td>
+                <td>distance3</td>
+                <td>amount3</td>
+                <td id="status-col">
+                    <div class="btn-group" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default btna">Accept</button>
+                      <button type="button" class="btn btn-default btnr">Reject</button>
+                    </div>
+                </td>            
+            </tr>
+            <tr>
+                <td>Rider2</td>
+                <td>Vehicle2</td>
+                <td>start2</td>
+                <td>end2</td>
+                <td>distance2</td>
+                <td>amount2</td>
+                <td id="status-col">
+                    <div class="btn-group" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default btna">Accept</button>
+                      <button type="button" class="btn btn-default btnr">Reject</button>
+                    </div>
+                </td>            
+            </tr>
+            <tr>
+                <td>Rider3</td>
+                <td>Vehicle3</td>
+                <td>start3</td>
+                <td>end3</td>
+                <td>distance3</td>
+                <td>amount3</td>
+                <td id="status-col">
+                    <div class="btn-group" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default btna">Accept</button>
+                      <button type="button" class="btn btn-default btnr">Reject</button>
+                    </div>
+                </td>            
+            </tr>
+            <tr>
+                <td>Rider2</td>
+                <td>Vehicle2</td>
+                <td>start2</td>
+                <td>end2</td>
+                <td>distance2</td>
+                <td>amount2</td>
+                <td id="status-col">
+                    <div class="btn-group" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default btna">Accept</button>
+                      <button type="button" class="btn btn-default btnr">Reject</button>
+                    </div>
+                </td>            
+            </tr>
+            <tr>
+                <td>Rider3</td>
+                <td>Vehicle3</td>
+                <td>start3</td>
+                <td>end3</td>
+                <td>distance3</td>
+                <td>amount3</td>
+                <td id="status-col">
+                    <div class="btn-group" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default btna">Accept</button>
+                      <button type="button" class="btn btn-default btnr">Reject</button>
+                    </div>
+                </td>            
+            </tr>
+            <tr>
+                <td>Rider2</td>
+                <td>Vehicle2</td>
+                <td>start2</td>
+                <td>end2</td>
+                <td>distance2</td>
+                <td>amount2</td>
+                <td id="status-col">
+                    <div class="btn-group" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default btna">Accept</button>
+                      <button type="button" class="btn btn-default btnr">Reject</button>
+                    </div>
+                </td>            
+            </tr>
+            <tr>
+                <td>Rider3</td>
+                <td>Vehicle3</td>
+                <td>start3</td>
+                <td>end3</td>
+                <td>distance3</td>
+                <td>amount3</td>
+                <td id="status-col">
+                    <div class="btn-group" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default btna">Accept</button>
+                      <button type="button" class="btn btn-default btnr">Reject</button>
+                    </div>
+                </td>            
+            </tr>
+            <tr>
+                <td>Rider2</td>
+                <td>Vehicle2</td>
+                <td>start2</td>
+                <td>end2</td>
+                <td>distance2</td>
+                <td>amount2</td>
+                <td id="status-col">
+                    <div class="btn-group" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default btna">Accept</button>
+                      <button type="button" class="btn btn-default btnr">Reject</button>
+                    </div>
+                </td>            
+            </tr>
+            <tr>
+                <td>Rider3</td>
+                <td>Vehicle3</td>
+                <td>start3</td>
+                <td>end3</td>
+                <td>distance3</td>
+                <td>amount3</td>
+                <td id="status-col">
+                    <div class="btn-group" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default btna">Accept</button>
+                      <button type="button" class="btn btn-default btnr">Reject</button>
+                    </div>
+                </td>            
+            </tr>
+            <tr>
+                <td>Rider2</td>
+                <td>Vehicle2</td>
+                <td>start2</td>
+                <td>end2</td>
+                <td>distance2</td>
+                <td>amount2</td>
+                <td id="status-col">
+                    <div class="btn-group" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default btna">Accept</button>
+                      <button type="button" class="btn btn-default btnr">Reject</button>
+                    </div>
+                </td>            
+            </tr>
+            <tr>
+                <td>Rider3</td>
+                <td>Vehicle3</td>
+                <td>start3</td>
+                <td>end3</td>
+                <td>distance3</td>
+                <td>amount3</td>
+                <td id="status-col">
+                    <div class="btn-group" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default btna">Accept</button>
+                      <button type="button" class="btn btn-default btnr">Reject</button>
+                    </div>
+                </td>            
+            </tr>
+            <tr>
+                <td>Rider2</td>
+                <td>Vehicle2</td>
+                <td>start2</td>
+                <td>end2</td>
+                <td>distance2</td>
+                <td>amount2</td>
+                <td id="status-col">
+                    <div class="btn-group" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default btna">Accept</button>
+                      <button type="button" class="btn btn-default btnr">Reject</button>
+                    </div>
+                </td>            
+            </tr>
+            <tr>
+                <td>Rider3</td>
+                <td>Vehicle3</td>
+                <td>start3</td>
+                <td>end3</td>
+                <td>distance3</td>
+                <td>amount3</td>
+                <td id="status-col">
+                    <div class="btn-group" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default btna">Accept</button>
+                      <button type="button" class="btn btn-default btnr">Reject</button>
+                    </div>
+                </td>            
+            </tr>
+            <tr>
+                <td>Rider2</td>
+                <td>Vehicle2</td>
+                <td>start2</td>
+                <td>end2</td>
+                <td>distance2</td>
+                <td>amount2</td>
+                <td id="status-col">
+                    <div class="btn-group" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default btna">Accept</button>
+                      <button type="button" class="btn btn-default btnr">Reject</button>
+                    </div>
+                </td>            
+            </tr>
+            <tr>
+                <td>Rider3</td>
+                <td>Vehicle3</td>
+                <td>start3</td>
+                <td>end3</td>
+                <td>distance3</td>
+                <td>amount3</td>
+                <td id="status-col">
+                    <div class="btn-group" role="group" aria-label="...">
+                      <button type="button" class="btn btn-default btna">Accept</button>
+                      <button type="button" class="btn btn-default btnr">Reject</button>
+                    </div>
+                </td>            
+            </tr>
+            <!-- <?php
+                }
+             ?> -->
+        </table>
+    </div>
+
+    <!-- home tiles -->
+    <div class="row" id="home-tiles">
+        
+    </div><!-- End of home-tiles -->
+</div> <!-- End of main-content -->
+    
+<footer class="panel-footer">
+    <div class="container">
+        <div class=" row">
+            
+            <div class="text-center" id="copy-right">&copy; <a href="">Team12</a>InstaRide
+            </div>
+        </div>
+        
+    </div>
+</footer>
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
