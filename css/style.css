@@ -17,8 +17,8 @@ body{
 }
 
 #logo-image{
-	background :url('../images/logo-img.png') no-repeat;
-	border-radius: 60px; 
+	background :url('../images/logo-img.jpg') no-repeat;
+	border-radius: 40px; 
 	width: 150px;
 	height: 150px;
 	margin: 10px 15px 10px 0px;
