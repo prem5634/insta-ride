@@ -47,13 +47,16 @@
         th{
             font-size: 1.2em;
             color: #056594;
+            /*border-right: 0px;
+            text-align:right; */
         }
   
         td {
             font-weight: lighter;
             padding: 5px;
             color: black;
-
+            /*border-left: 0px;
+            text-align: left;*/
         }
         .jumbotron{
             height: auto;
@@ -109,8 +112,10 @@
 							<span class="glyphicon glyphicon-bell"></span><br class="hidden-xs">Upcoming Rides</a>
 					</li>
 					<li>
-						<a href="login-user.html">
-							<span class="glyphicon glyphicon-log-out"></span><br class="hidden-xs">Logout</a>
+						<button onclick="location.href='login-user.html' " class="" >
+							<span class="glyphicon glyphicon-log-out" ></span>
+							<br class="hidden-xs">Logout
+						</button>
 					</li>
 				</ul>
 			</div>
@@ -125,13 +130,16 @@
 		<!-- <img src="" alt="" class="visible-xs img-responsive"> -->
 		<table>
 			<tr>
-				<th>Name</th>
-				<th>Adhaar Number</th>
-				<th>Address</th>
+				<th>Name :</th>
+				<td>User1</td>
 			</tr>
 			<tr>
-				<td>User1</td>
+				<th>Adhaar Number :</th>
 				<td>123412341234</td>
+			</tr>
+			<tr>
+				
+				<th>Address :</th>
 				<td>H.no : 2-191, 3rd Street, VaniNagar, Malkajgiri, Hyderabad. 500047</td>
 			</tr>
 		</table>

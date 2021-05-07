@@ -32,8 +32,6 @@
 			background-color: #Ececec;
 		}
 		#side{
-			height: inherit;
-			background-color: #056594;
 			padding-left: 0;
 			border-top-left-radius: 10px;
 			border-bottom-left-radius: 10px; 
@@ -44,21 +42,21 @@
 		#signup-form{
 			width: 80vw;
 			margin: auto;
-			height: 1150px;
+			/*height: 1150px;*/
 			margin-top: 15vh;
 			margin-bottom: 15vh;
 			border-radius: 10px;
 			border-color: darkslategray;
-			box-shadow: 0 10px 10px 5px darkslategrey;
+			box-shadow: 15px 20px 20px darkslategrey;
+			background-color: #056594;
 		}
 		#main-content{
-			padding-top: 8vh;
+			padding: 30px;
 			border-top-right-radius: 10px;
 			border-bottom-right-radius: 10px; 
 			position: relative;
 			background-color: lightslategray;
 			height: inherit;
-			/*padding-left: 8%;	*/
 		}
 		.lbl{
 			float: left;
@@ -97,11 +95,9 @@
 			color: white;
 		    background-color: #056594;
 		    border-radius: 10px;
-		    margin-bottom: 15px;
+		    margin-bottom: 25px;
 		    padding: 15px;
 		    text-align: center;
-		    margin-right: 20px;
-    		margin-left: 20px;
 		}
 		hr{
 			width: 100%;
@@ -109,9 +105,10 @@
 		@media(max-width: 992px) and (min-width: 400px){
 			#main-content{		
 			border-radius:10px;
+			min-height: 1250px;
 			}
 			#signup-form{
-				height: 1250px;
+				min-height: 1250px;
 			}
 		}	
 		

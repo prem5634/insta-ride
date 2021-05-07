@@ -34,8 +34,7 @@
 			background-color: #Ececec;
 		}
 		#side{
-			height: inherit;
-			background-color: #056594;
+			/*height: inherit;*/
 			padding-left: 0;
 			border-top-left-radius: 10px;
 			border-bottom-left-radius: 10px; 
@@ -47,21 +46,22 @@
 		#login-form{
 			width: 80vw;
 			margin: auto;
-			height: 480px;
+			min-height: 480px;
 			margin-top: 15vh;
 			border-radius: 10px;
-			border-color: darkslategray;
-			box-shadow: 0 10px 10px 5px darkslategrey;
+			box-shadow: 15px 20px 20px darkslategrey;
+    		
+			background-color: #056594;
 		}
 
 		#main-content{
-			padding-top:10%;
+			padding:10%;
 			border-top-right-radius: 10px;
 			border-bottom-right-radius: 10px; 
 			position: relative;
 			background-color: lightslategray;
-			height: inherit;
-			padding-left: 8%;	
+			min-height: 480px;
+			/*padding-left: 8%;	*/
 		}
 		#main-content a{
 			width: 100px;
@@ -80,17 +80,17 @@
 		@media(max-width: 992px) and (min-width: 400px){
 			#main-content{ border-radius:10px;}
 			#login-form{
-				height: 550px;
+				min-height: 480px;
 			}
 			#side{
 
 				background-color: #056594;
 				padding: 10px 10px;
-				margin-bottom: 20px;
-				margin-right: 40px;
+				margin-bottom: 30px;
+				/*margin-right: 40px;*/
 				border-radius: 10px; 
 				color: white;
-				height: auto;
+				width: 100%;
 			}
 		}
 	</style>

@@ -70,18 +70,24 @@ body{
 	margin-top: 10px;
 }
 
-#nav-list a{
+#nav-list a,#nav-list button{
 	color: #fff;
 	text-align: center;
 }
-
-#nav-list a:hover {
+#nav-list button{
+	background-color: inherit;
+	font-size: 1em;
+	padding: 13px; 
+	border: 0px;
+	width: -webkit-fill-available;
+}
+#nav-list a:hover, #nav-list button:hover{
 	background: #e41534;
 	border: 1px solid #e7e7e7;
 	border-radius: 7px;
 }
 
-#nav-list a span{
+#nav-list a span,#nav-list button span{
 	font-size: 1.8em;
 }
 
@@ -178,7 +184,9 @@ body{
 	.navbar-brand p{
 		font-size: 9px;
 	}
-
+	#nav-list button{
+		font-size: 1.2em !important;
+	}
 	#collapsable-nav a{
 		font-size: 1.2em;
 	}
@@ -220,7 +228,13 @@ body{
 	#collapsable-nav a{
 		font-size: 1.2em;
 	}
-
+	#nav-list button{
+		font-size: 1.2em !important;
+	}
+	#nav-list button span{
+		font-size: 1em;
+		margin-right: 10px;
+	}
 	#collapsable-nav a span{
 		font-size: 1em !important;
 		text-align: vertical;

@@ -31,7 +31,7 @@
 			box-sizing: border-box;
 			background-color: #Ececec;
 		}
-		#side{			
+		#side{
 			padding-left: 0;
 			border-top-left-radius: 10px;
 			border-bottom-left-radius: 10px; 
@@ -50,17 +50,18 @@
 			background-color: #056594;
 		}
 		#main-content{
-			padding:30px;
+			padding: 8vh;
 			border-top-right-radius: 10px;
 			border-bottom-right-radius: 10px; 
 			position: relative;
 			background-color: lightslategray;
 			height: inherit;
+			/*padding-left: 8%;	*/
 		}
 		.lbl{
 			float: left;
 			clear: both;
-			width: 100%;
+			width: 86%;
 			margin-top: 5px;
 			margin-bottom: 10px;
 			color: black;
@@ -84,7 +85,7 @@
 			border : 1px solid #ccc;
 		}
 		#main-content a{
-			color: black;
+			color: white;
 			text-decoration: none;
 		}
 		#main-content a:hover{
@@ -97,9 +98,10 @@
 			color: white;
 		    background-color: #056594;
 		    border-radius: 10px;
-		    margin-bottom: 15px;
+		    margin-bottom: 25px;
 		    padding: 15px;
 		    text-align: center;
+		    /*margin: 20px;*/
 		    width: 100%;
 		}
 		@media(max-width: 992px) and (min-width: 400px){
@@ -121,32 +123,18 @@
 				<h1>InstaRide</h1>
 				<span>SignUp - User</span>
 			</div>
-			<label class="lbl">Name :</label><br>
-				<input placeholder="First name..." oninput="this.className = ''" name="fname"><br>
-				<input placeholder="Last name..." oninput="this.className = ''" name="lname"><br>
-			<label class="lbl">Contact Info:</label>
-				<p><input placeholder="E-mail..." oninput="this.className = ''" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></p>
-				<p><input placeholder="Phone..." oninput="this.className = ''" name="phone" type="number" maxlength="10" size="10"></p>
-			</label>
 
-			<label class="lbl">Current Address :</label>
-				<p><input placeholder="Full Address" oninput="this.className = ''" name="address"></p>
 			
-			<label class="lbl">Date of Birth:</label>
-				<p><input placeholder="dd" oninput="this.className = ''" name="dd" pattern="[0-9]{2}" title="eg: 11"></p>
-				<p><input placeholder="mm" oninput="this.className = ''" name="mm" pattern="[0-9]{2}" title="eg: 11"></p>
-				<p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy" pattern="[0-9]{4}" title="eg: 2020"></p>
+			<label class="lbl">Upload Passport-sized Photo:</label>
+				<p><input type="file" id="myFile" name="photo" ></p>
+			<label class="lbl">Upload Licence:</label>
+				<p><input type="file" id="myFile" name="licence" ></p>
 
-			<label class="lbl">Login Info:</label>
-				<p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
-				<p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password" pattern=".{8,}" title="Eight or more characters"></p>
+			<!-- update location -->
+			<button class="col-md-12" type="">Update Location</button>
 
-			<label class="lbl">Authentication Details :</label>
-				<p><input placeholder="Adhaar Number..." oninput="this.className = ''" name="adhaar-num" type="number" pattern="[0-9]{12}"  maxlength="12" size="12" title="eg: 123412341234"></p>
-				<p><input placeholder="licence Number..." oninput="this.className = ''" name="lic-num" type="text" pattern="[A-Z]{2}[0-9]{14}" maxlength="16" size="16" title="eg: AP12345123451234"></p>
-			
 			<div >
-				<button class="col-md-5" type="submit"><span class="glyphicon glyphicon-log-in"></span> <a href="signup-user-doc.html">Next</a></button>
+				<button class="col-md-5" type="submit"><span class="glyphicon glyphicon-log-in"></span> SignUp</button>
 				<button class="col-md-5"  type="reset"><span class="glyphicon glyphicon-repeat"></span> Clear</button>
 			</div>
 			<hr >
