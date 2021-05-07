@@ -112,7 +112,9 @@ body{
 }
 
 
-
+#main-content{
+		min-height: 380px;
+	}
 
 
 /*Footer*/
@@ -144,6 +146,7 @@ body{
 		height: 675px;*/
 		/*min-height: 675px;*/
 	}
+	
 }
 /*medium device only*/
 @media (min-width: 992px) and (max-width: 1199px){
@@ -190,6 +193,9 @@ body{
 	#collapsable-nav a{
 		font-size: 1.2em;
 	}
+	#main-content {
+			min-height: 312px;
+		}
 	.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle), 
 	.btn-group>.btn:last-child:not(:first-child), 
 	.btn-group>.dropdown-toggle:not(:first-child){
@@ -240,7 +246,9 @@ body{
 		text-align: vertical;
 		margin-right: 10px;
 	}
-
+		#main-content {
+			min-height: 440px;
+		}
 	.panel-footer section{
 		margin-bottom: 30px;
 		text-align: center;
